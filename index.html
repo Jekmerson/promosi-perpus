@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio & Presentasi: Sistem Informasi Perpustakaan Sekolah</title>
+  <meta name="description" content="Website portofolio dan presentasi sistem informasi perpustakaan sekolah modern berbasis desktop (Windows). 100% offline-first, standar DDC, cetak barcode, kartu anggota resmi, dan laporan berkop sekolah.">
+  <meta name="keywords" content="portofolio aplikasi perpustakaan, presentasi sistem perpustakaan sekolah, software perpus offline, white label perpus, cetak barcode buku">
+  <meta name="author" content="Pengembang Sistem Perpustakaan">
+
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portofolio: Sistem Informasi Perpustakaan Sekolah">
+  <meta property="og:description" content="Presentasi sistem otomasi perpustakaan sekolah: 100% Offline, standar DDC, cetak barcode & kartu anggota resmi.">
+  <meta property="og:image" content="assets/screenshots/02_dashboard.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="site-header" id="main-header">
+    <div class="container nav-container">
+      <a href="#beranda" class="brand-logo">
+        <div class="brand-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          </svg>
+        </div>
+        <span>EduPustaka <span class="gradient-text">Pro</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#keunggulan" class="nav-link">Keunggulan Sistem</a></li>
+          <li><a href="#fitur" class="nav-link">Fitur & Modul</a></li>
+          <li><a href="#kustomisasi" class="nav-link">Kustomisasi Instansi</a></li>
+          <li><a href="#galeri" class="nav-link">Galeri Antarmuka</a></li>
+          <li><a href="#spesifikasi" class="nav-link">Spesifikasi Teknis</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="Ganti Mode Gelap/Terang" aria-label="Toggle Theme">
+          <span class="theme-icon"></span>
+        </button>
+
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Buka Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         Hero Section (Presentasi Utama)
+         ======================================================================== -->
+    <section class="hero-section" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-container">
+            <span class="hero-badge">
+              <span class="pulse-dot"></span>
+              Presentasi Portofolio • Sistem Informasi Perpustakaan Sekolah
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Sistem Informasi Perpustakaan Sekolah <span class="gradient-text">Modern & Siap Kustomisasi</span>
+          </h1>
+
+          <p class="hero-lead">
+            Aplikasi desktop native (Windows) yang dirancang untuk mempermudah digitalisasi dan administrasi perpustakaan sekolah. Sistem bekerja <strong>100% Offline-First</strong> tanpa memerlukan jaringan internet, berstandar klasifikasi DDC nasional, dan <strong>dapat dikustomisasi penuh dengan nama serta logo sekolah yang diinginkan</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#galeri" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Lihat 12 Tangkapan Layar UI</span>
+            </a>
+            <a href="#fitur" class="btn btn-secondary">
+              <span>Eksplorasi Fitur Lengkap ↓</span>
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <h4>12+</h4>
+              <p>Modul Terintegrasi</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Offline (SQLite Lokal)</p>
+            </div>
+            <div class="stat-item">
+              <h4>DDC</h4>
+              <p>Standar Nasional 000-900</p>
+            </div>
+            <div class="stat-item">
+              <h4>Windows</h4>
+              <p>Native App (10 & 11)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Preview Mockup -->
+        <div class="hero-mockup-wrapper">
+          <div class="hero-card-glass">
+            <div class="mockup-window-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="mockup-window-title">Tampilan Dashboard Aplikasi Perpustakaan</div>
+              <span class="mockup-window-badge">● Sistem Berjalan</span>
+            </div>
+
+            <div class="mockup-media-container">
+              <img src="assets/screenshots/02_dashboard.png" alt="Dashboard Aplikasi Perpustakaan PUJATI" class="mockup-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Section: Keunggulan Utama Sistem
+         ======================================================================== -->
+    <section class="tech-section" id="keunggulan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">💡 Karakteristik & Keunggulan</span>
+          <h2 class="section-title">Solusi Praktis & Efisien untuk <span class="gradient-text">Perpustakaan Sekolah</span></h2>
+          <p class="section-subtitle">
+            Dibuat untuk mengatasi kendala perpustakaan konvensional, mulai dari pencatatan manual, kesulitan pencarian buku, hingga keterbatasan jaringan internet di sekolah.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-card">
+            <div class="bento-header">
+              <div class="bento-icon-wrapper">🏷️</div>
+              <span class="bento-tag">White-Label</span>
+            </div>
+            <h3 class="bento-title">Fleksibilitas Nama & Identitas Instansi</h3>
+            <p class="bento-desc">
+              Sistem bersifat netral dan dapat dipersonalisasi dengan nama sekolah, logo resmi, kop dinas, dan alamat instansi manapun yang membutuhkan.
+            </p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-header">
+              <div class="bento-icon-wrapper">🛡️</div>
+              <span class="bento-tag">100% Offline</span>
+            </div>
+            <h3 class="bento-title">Kemandirian Data & Bebas Internet</h3>
+            <p class="bento-desc">
+              Seluruh basis data tersimpan di penyimpanan lokal komputer perpustakaan (SQLite). Sistem tetap bekerja dengan kecepatan maksimal walau internet sedang terputus.
+            </p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-header">
+              <div class="bento-icon-wrapper">📑</div>
+              <span class="bento-tag">Standar DDC</span>
+            </div>
+            <h3 class="bento-title">Klasifikasi DDC & Standar Perpustakaan</h3>
+            <p class="bento-desc">
+              Mendukung struktur klasifikasi Dewey Decimal (000-900), pembuatan nomor panggil (call number), cetak label punggung buku, dan barcode buku.
+            </p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-header">
+              <div class="bento-icon-wrapper">⚡</div>
+              <span class="bento-tag">Sirkulasi Cepat</span>
+            </div>
+            <h3 class="bento-title">Otomasi Sirkulasi & Perhitungan Denda</h3>
+            <p class="bento-desc">
+              Mempercepat alur peminjaman dan pengembalian buku dengan scanner barcode serta kalkulasi denda keterlambatan yang akurat.
+            </p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-header">
+              <div class="bento-icon-wrapper">📊</div>
+              <span class="bento-tag">Excel Sync</span>
+            </div>
+            <h3 class="bento-title">Impor & Ekspor Massal Microsoft Excel</h3>
+            <p class="bento-desc">
+              Memudahkan migrasi data buku dan siswa dalam jumlah ribuan secara instan melalui file Excel (.xlsx) tanpa perlu input berulang-ulang.
+            </p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-header">
+              <div class="bento-icon-wrapper">💾</div>
+              <span class="bento-tag">Keamanan</span>
+            </div>
+            <h3 class="bento-title">Pencadangan Database 1-Klik</h3>
+            <p class="bento-desc">
+              Fitur backup dan restore mandiri yang memudahkan staf memindahkan atau mengamankan data ke flashdisk / media penyimpanan eksternal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Section: Rincian Fitur & Modul Lengkap
+         ======================================================================== -->
+    <section class="modules-section" id="fitur">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">📚 Fitur & Modul</span>
+          <h2 class="section-title">Daftar Modul Terintegrasi dalam <span class="gradient-text">Aplikasi</span></h2>
+          <p class="section-subtitle">
+            Mencakup seluruh alur kerja perpustakaan mulai dari data master, pengorganisasian koleksi, presensi pengunjung, hingga pelaporan resmi.
+          </p>
+        </div>
+
+        <div class="bento-grid" id="modules-bento-grid">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Section: Kustomisasi Identitas Sekolah (White-Label Capability)
+         ======================================================================== -->
+    <section class="customizer-section" id="kustomisasi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">🏫 Kemampuan Kustomisasi</span>
+          <h2 class="section-title">Dapat Disesuaikan untuk <span class="gradient-text">Berbagai Instansi Pendidikan</span></h2>
+          <p class="section-subtitle">
+            Aplikasi ini telah dirancang secara modular sehingga seluruh identitas sekolah dapat diatur sesuai kebutuhan instansi terkait:
+          </p>
+        </div>
+
+        <div class="customizer-box-wrapper" style="padding: 32px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+            <div style="background: var(--bg-surface-elevated); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <div style="font-size: 1.6rem; margin-bottom: 10px;">🏷️</div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px;">1. Judul & Nama Aplikasi</h4>
+              <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                Nama aplikasi disesuaikan dengan permintaan instansi (misal: <em>Pustaka SMAN 1</em>, <em>SIPERPUS SMP 2</em>, atau <em>E-Library SMK</em>).
+              </p>
+            </div>
+
+            <div style="background: var(--bg-surface-elevated); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <div style="font-size: 1.6rem; margin-bottom: 10px;">🏛️</div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px;">2. Logo & Kop Laporan Dinas</h4>
+              <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                Kop surat resmi, logo sekolah, nomor NPSN, alamat instansi, dan penandatangan laporan (Kepala Sekolah & Kepala Perpustakaan) pada dokumen cetak PDF.
+              </p>
+            </div>
+
+            <div style="background: var(--bg-surface-elevated); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <div style="font-size: 1.6rem; margin-bottom: 10px;">🪪</div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px;">3. Kartu Anggota Ber-Barcode</h4>
+              <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                Desain kartu anggota perpustakaan resmi yang mencantumkan nama sekolah, identitas siswa/guru, foto, dan barcode ID yang dapat discan saat presensi dan peminjaman.
+              </p>
+            </div>
+
+            <div style="background: var(--bg-surface-elevated); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <div style="font-size: 1.6rem; margin-bottom: 10px;">⚙️</div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px;">4. Parameter Aturan Sirkulasi</h4>
+              <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                Pengaturan masa lama pinjam (hari), batas kuota peminjaman buku per orang, dan nominal denda keterlambatan per hari yang dapat disesuaikan dengan aturan perpustakaan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Section: Galeri 12 Tangkapan Layar Asli
+         ======================================================================== -->
+    <section class="gallery-section" id="galeri">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">📸 Galeri Tangkapan Layar Asli</span>
+          <h2 class="section-title">Dokumentasi Visual <span class="gradient-text">Antarmuka Aplikasi</span></h2>
+          <p class="section-subtitle">
+            Berikut 12 tangkapan layar asli dari aplikasi yang telah selesai dikembangkan. Klik gambar untuk melihat resolusi penuh dan keterangan fiturnya.
+          </p>
+        </div>
+
+        <div class="gallery-filters-wrapper">
+          <button type="button" class="gallery-filter-btn active" data-category="all">Semua Tampilan (12)</button>
+          <button type="button" class="gallery-filter-btn" data-category="dashboard">Dashboard</button>
+          <button type="button" class="gallery-filter-btn" data-category="master">Data Master & Buku</button>
+          <button type="button" class="gallery-filter-btn" data-category="sirkulasi">Sirkulasi & Denda</button>
+          <button type="button" class="gallery-filter-btn" data-category="koleksi">Koleksi Media & APE</button>
+          <button type="button" class="gallery-filter-btn" data-category="laporan">Laporan & Presensi</button>
+          <button type="button" class="gallery-filter-btn" data-category="pengaturan">Pengaturan</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Section: Arsitektur Teknologi & Spesifikasi Perangkat
+         ======================================================================== -->
+    <section class="tech-section" id="spesifikasi">
+      <div class="container tech-grid">
+        <div>
+          <span class="section-tag">💻 Arsitektur & Teknologi</span>
+          <h2 class="section-title">Spesifikasi Teknis & <span class="gradient-text">Arsitektur Perangkat Lunak</span></h2>
+          <p class="section-subtitle" style="text-align: left;">
+            Dibangun dengan standar teknologi modern yang mengutamakan performa responsif, kestabilan sistem operasi desktop, dan keamanan data lokal.
+          </p>
+
+          <div style="margin-top: 24px; padding: 24px; background: var(--bg-surface-elevated); border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+            <h4 style="margin-bottom: 12px; font-size: 1.1rem;">🖥️ Kebutuhan Minimum Komputer:</h4>
+            <ul style="list-style: none; font-size: 0.9rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+              <li>✔ <strong>Sistem Operasi:</strong> Windows 10 atau Windows 11 (64-bit)</li>
+              <li>✔ <strong>Prosesor:</strong> Intel Core i3 / AMD setara (atau lebih baru)</li>
+              <li>✔ <strong>Memori (RAM):</strong> Minimal 2 GB (Disarankan 4 GB)</li>
+              <li>✔ <strong>Penyimpanan:</strong> Sisa ruang 200 MB pada harddisk/SSD</li>
+              <li>✔ <strong>Perangkat Pendukung:</strong> Barcode Scanner USB (opsional/plug-and-play) & Printer Standar</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="tech-chips-container">
+            <div class="tech-chip-box">
+              <div style="font-size: 1.8rem; margin-bottom: 8px;">⚡</div>
+              <div class="tech-chip-name">Electron Framework</div>
+              <div class="tech-chip-desc">Aplikasi desktop Windows native yang stabil dan terintegrasi dengan sistem berkas lokal.</div>
+            </div>
+            <div class="tech-chip-box">
+              <div style="font-size: 1.8rem; margin-bottom: 8px;">⚛️</div>
+              <div class="tech-chip-name">React.js + Vite</div>
+              <div class="tech-chip-desc">Antarmuka interaktif yang cepat, modern, responsif, dan bebas jeda loading.</div>
+            </div>
+            <div class="tech-chip-box">
+              <div style="font-size: 1.8rem; margin-bottom: 8px;">🗄️</div>
+              <div class="tech-chip-name">SQLite (sql.js)</div>
+              <div class="tech-chip-desc">Basis data lokal yang tangguh, mandiri, tanpa instalasi server database terpisah.</div>
+            </div>
+            <div class="tech-chip-box">
+              <div style="font-size: 1.8rem; margin-bottom: 8px;">📊</div>
+              <div class="tech-chip-name">SheetJS & PDF Engine</div>
+              <div class="tech-chip-desc">Dukungan impor/ekspor data massal Excel dan pembuatan cetak laporan berkop resmi.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid" style="grid-template-columns: 2fr 1fr;">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <span>EduPustaka <span class="gradient-text">Pro</span></span>
+          </div>
+          <p>
+            Portofolio & Showcase Sistem Informasi Perpustakaan Sekolah. Solusi digitalisasi dan otomasi perpustakaan desktop native yang siap dikustomisasi untuk berbagai instansi pendidikan.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi Presentasi</h4>
+          <ul class="footer-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#keunggulan">Keunggulan Sistem</a></li>
+            <li><a href="#fitur">Fitur & Modul</a></li>
+            <li><a href="#kustomisasi">Kustomisasi Instansi</a></li>
+            <li><a href="#galeri">Galeri 12 Tangkapan Layar</a></li>
+            <li><a href="#spesifikasi">Spesifikasi Teknis</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Portofolio Sistem Informasi Perpustakaan Sekolah.</div>
+        <div>Platform Desktop Windows Native • Offline-First SQLite • DDC Standard</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       HD Gallery Viewer Modal
+       ======================================================================== -->
+  <div class="gallery-modal" id="gallery-hd-modal">
+    <div class="modal-overlay-bg"></div>
+    <div class="gallery-modal-content">
+      <button type="button" class="modal-close-btn" id="modal-gallery-close" style="position: absolute; top: 16px; right: 16px; z-index: 20; background: rgba(0,0,0,0.6); color: #fff; width: 36px; height: 36px; border-radius: 50%;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="gallery-modal-body">
+        <div class="gallery-modal-image-col">
+          <button class="gallery-nav-arrow nav-prev" id="modal-prev-btn" aria-label="Sebelumnya">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+
+          <img src="assets/screenshots/01_login.png" alt="Screenshot HD Preview" id="modal-gallery-img">
+
+          <button class="gallery-nav-arrow nav-next" id="modal-next-btn" aria-label="Selanjutnya">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+        <div class="gallery-modal-info-col">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <span class="pricing-badge" id="modal-gallery-badge">Modul</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);" id="modal-gallery-counter">1 / 12</span>
+            </div>
+            <h3 id="modal-gallery-title" style="font-size: 1.35rem; margin-bottom: 12px;">Judul Screenshot</h3>
+            <p id="modal-gallery-desc" style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">Deskripsi modul...</p>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-color);">
+            <small style="color: var(--text-muted); display: block; text-align: center; font-size: 0.75rem;">Gunakan tombol panah keyboard ◄ ► untuk navigasi</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
